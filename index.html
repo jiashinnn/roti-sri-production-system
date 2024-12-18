@@ -1,0 +1,48 @@
+<!-- Home page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roti Sri Bakery Production System Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Roti Sri Bakery Production System</h1>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav>
+        <ul class="tabs">
+            <li><a href="#" id="recipes-tab" onclick="switchTab('recipes')">Recipe Management</a></li>
+            <li><a href="#" id="scheduling-tab" onclick="switchTab('scheduling')">Production Scheduling</a></li>
+            <li><a href="#" id="tracking-tab" onclick="switchTab('tracking')">Batch Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Area -->
+    <main id="content">
+        <section id="recipes" class="tab-content">
+            <h2>Recipe Management</h2>
+            <p>Manage recipes for bakery products here.</p>
+        </section>
+        <section id="scheduling" class="tab-content hidden">
+            <h2>Production Scheduling</h2>
+            <p>Plan and organize production schedules here.</p>
+        </section>
+        <section id="tracking" class="tab-content hidden">
+            <h2>Batch Tracking</h2>
+            <p>Track and monitor production batches here.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Roti Sri Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
