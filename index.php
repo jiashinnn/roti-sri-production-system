@@ -106,7 +106,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer" style="height: 60px">
-  <p>© <?php echo date('Y');?> EazySurvey | Survey Management System </p>
+  <p>© <?php echo date('Y');?> YSLProduction | Production System </p>
   </footer>
 </div>
 <!-- ./wrapper -->
