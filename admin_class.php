@@ -24,7 +24,7 @@ class Action
         $qry = $this->db->query("SELECT *,concat(user_fullName) as name FROM tbl_users where user_email = '" . $email . "' and user_password = '" . md5($password) . "' ");
         if ($qry->num_rows > 0) {
             foreach ($qry->fetch_array() as $key => $value) {
-                if ($key != 'password' && !is_numeric($key))
+                if ($key != 'user_password' && !is_numeric($key))
                     $_SESSION['login_' . $key] = $value;
             }
             return 1;

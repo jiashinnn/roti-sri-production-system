@@ -1,8 +1,3 @@
-<?php
-// This PHP file defines the top navigation bar (navbar) for the YSLProduction | Production System web application.
-// It includes menu toggle, branding, and utility options like fullscreen mode.
-?>
-
 <!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-secondary navbar-dark">
     <!-- Left navbar links -->

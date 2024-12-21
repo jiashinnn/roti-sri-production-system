@@ -57,7 +57,7 @@ if (!isset($conn)) {
                 <form class="forms-sample" method="post">
                   <?php
 
-                  $sql = "SELECT * from page where PageType='aboutus'";
+                  $sql = "SELECT * from tbl_page where page_type='aboutus'";
                   $query = $dbh->prepare($sql);
                   $query->execute();
                   $results = $query->fetchAll(PDO::FETCH_OBJ);
@@ -66,11 +66,11 @@ if (!isset($conn)) {
                     foreach ($results as $row) {               ?>
                       <div class="form-group">
                         <label for="exampleInputName1">Page Title:</label>
-                        <input type="text" name="pagetitle" value="<?php echo $row->PageTitle; ?>" class="form-control" required='true'>
+                        <input type="text" name="pagetitle" value="<?php echo $row->page_title; ?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Page Description:</label>
-                        <textarea type="text" name="pagedes" class="form-control" required='true'><?php echo $row->PageDescription; ?></textarea>
+                        <textarea type="text" name="pagedes" class="form-control" required='true'><?php echo $row->page_description; ?></textarea>
                       </div>
                   <?php $cnt = $cnt + 1;
                     }
