@@ -52,7 +52,7 @@ include('includes/dbconnection.php');
 			 </div>
 			 <div class="col-md-7 abt-info-pic">
 			 	<?php
-$sql="SELECT * from page where PageType='aboutus'";
+$sql="SELECT * FROM `tbl_page` WHERE `page_type` = 'aboutus'";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -63,7 +63,7 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
 				 
-				 <p><?php  echo ($row->PageDescription);?></p><?php $cnt=$cnt+1;}} ?>
+				 <p><?php  echo ($row->page_description);?></p><?php $cnt=$cnt+1;}} ?>
 				
 			 </div>
 			 <div class="clearfix"> </div>

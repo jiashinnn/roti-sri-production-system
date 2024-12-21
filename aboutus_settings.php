@@ -5,7 +5,8 @@ if (!isset($conn)) {
   if (isset($_POST['submit'])) {
     $pagetitle = $_POST['pagetitle'];
     $pagedes = $_POST['pagedes'];
-    $sql = "update page set PageTitle=:pagetitle,PageDescription=:pagedes where PageType='aboutus'";
+    //$sql = "update tbl_page set page_title=:pagetitle,page_description=:pagedes where page_type='aboutus'";
+    $sql = "UPDATE `tbl_page` SET `page_title`='$pagetitle',`page_description`='$pagedes' WHERE `page_type` = 'aboutus'";
     $query = $dbh->prepare($sql);
     $query->bindParam(':pagetitle', $pagetitle, PDO::PARAM_STR);
     $query->bindParam(':pagedes', $pagedes, PDO::PARAM_STR);

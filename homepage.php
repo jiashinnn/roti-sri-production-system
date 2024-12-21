@@ -75,7 +75,7 @@ include('includes/dbconnection.php');
 <div class="welcome">
 	<div class="container">
 		<?php
-$sql="SELECT * from page where PageType='aboutus'";
+$sql="SELECT * from tbl_page where page_type='aboutus'";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -85,8 +85,8 @@ if($query->rowCount() > 0)
 {
 foreach($results as $row)
 {               ?>
-		<h2><?php  echo htmlentities($row->PageTitle);?></h2>
-		<p><?php  echo ($row->PageDescription);?></p><?php $cnt=$cnt+1;}} ?>
+		<h2><?php  echo htmlentities($row->page_title);?></h2>
+		<p><?php  echo ($row->page_description);?></p><?php $cnt=$cnt+1;}} ?>
 	</div>
 </div>
 <!--/welcome-->
