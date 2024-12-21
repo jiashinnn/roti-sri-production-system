@@ -2,7 +2,7 @@
 <!-- Info boxes -->
 
 <script>
-    var welcomeMessage = 'Welcome, <?php echo isset($_SESSION['login_name']) ? $_SESSION['login_name'] : "User"; ?>!';
+    var welcomeMessage = 'Welcome, User!';
     alert(welcomeMessage);
 </script>
 
