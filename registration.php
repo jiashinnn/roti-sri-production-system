@@ -14,9 +14,9 @@ if (isset($_POST['submit'])) {
   $phone = $_POST['phone'];
   $address = $_POST['address'];
 
-  $sqlregister = "INSERT INTO `tbl_users`(`user_fullName`, `user_contact`, `user_address`, `user_email`, `user_password`) VALUES (:fullname, :phone, :address, :email, :password)";
+  //$sqlregister = "INSERT INTO `tbl_users`(`user_fullName`, `user_contact`, `user_address`, `user_email`, `user_password`) VALUES (:fullname, :phone, :address, :email, :password)";
 
-  //$sqlregister = "INSERT INTO `tbl_users`(`user_fullName`, `user_contact`, `user_address`, `user_email`, `user_password`) VALUES ('$fullname','$phone','$address','$email','$password')";
+  $sqlregister = "INSERT INTO `tbl_users`(`user_fullName`, `user_contact`, `user_address`, `user_email`, `user_password`) VALUES ('$fullname','$phone','$address','$email','$password')";
   //$sql = "insert into users(fullname,email,password,type)values(:fullname,:email,:password,:type)";
 
   $query = $dbh->prepare($sqlregister);

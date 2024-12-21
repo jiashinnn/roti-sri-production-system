@@ -9,7 +9,7 @@
       </div>
       <div class="col-md-3 footer-middle">
         <?php
-$sql="SELECT * from page where PageType='contactus'";
+$sql="SELECT * from tbl_page where page_type='contactus'";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
