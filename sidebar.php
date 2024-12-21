@@ -11,7 +11,7 @@
             <a class="dropdown-item" href="ajax.php?action=logout">Logout</a>
         </div>
     </div>
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item dropdown">
@@ -178,7 +178,7 @@
                 <?php endif; ?>
             </ul>
         </nav>
-    </div>
+    </div> -->
 </aside>
 <script>
     $(document).ready(function() {
